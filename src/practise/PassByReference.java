@@ -2,6 +2,9 @@
 // Copyright Planon 1997-2018. All Rights Reserved.
 package practise;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * PassingValues
  */
@@ -39,6 +42,14 @@ public class PassByReference
 
     someMethod(pv);
     System.out.println("print x value" + pv.x + +pv.y);
+    
+    Map<String, String> map = new HashMap<>();
+    
+   map.put("1","Arpitha");
+   System.out.println(map);
+   map.remove("1");
+   System.out.println(map);
+    
   }
 
 
