@@ -16,7 +16,8 @@ int a[]={1,15,15,17,18,5,1};
             if(a[i]==a[j])
             {
                 System.out.println("count  "+ a[i]+" is "+ ++count);
-            }
+                
+            }  
         }
     }
 
