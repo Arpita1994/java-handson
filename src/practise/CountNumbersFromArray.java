@@ -30,7 +30,7 @@ for (int i :a1) {
 	}
 	else
 	{
-		map.put(i,1);
+		map.put(i,1); 
 	}
 }
 for(int j: map.keySet())
