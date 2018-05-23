@@ -19,7 +19,6 @@ public class TopTwoMaximumNumbersInArray {
 				}
 			}
 		}
-System.out.println(list);
 		
 	}
 
