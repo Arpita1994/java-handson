@@ -5,19 +5,20 @@ package practise;
 /**
  * ClassX
  */
-public class ClassX
-{
-  //~ Instance Variables ---------------------------------------------------------------------------
+public class ClassX {
+	// ~ Instance Variables
+	// ---------------------------------------------------------------------------
+	int x;
+	int y;
+	int i = 10;
 
-  int i = 10;
+	// ~ Methods
+	// --------------------------------------------------------------------------------------
 
-  //~ Methods --------------------------------------------------------------------------------------
-
-  /**
-   * DOCUMENT ME!
-   */
-  public static void someMethod()
-  {
-    System.out.println("Class X");
-  }
+	/**
+	 * DOCUMENT ME!
+	 */
+	public void someMethod() {
+		System.out.println("Class X");
+	}
 }

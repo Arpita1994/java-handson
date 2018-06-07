@@ -8,58 +8,60 @@ import java.util.Map;
 /**
  * PassingValues
  */
-public class PassByReference
-{
-  //~ Instance Variables ---------------------------------------------------------------------------
+public final class PassByReference {
+	// ~ Instance Variables
+	// ---------------------------------------------------------------------------
 
-  private int x;
-  private final int y;
+	private final int x;
+	private final int y;
 
-  //~ Constructors ---------------------------------------------------------------------------------
+	// ~ Constructors
+	// ---------------------------------------------------------------------------------
 
-  /**
-   * Creates a new PassingValues object.
-   *
-   * @param x aI DOCUMENT ME!
-   * @param y DOCUMENT ME!
-   */
-  public PassByReference(int x, int y)
-  {
-    this.x = x;
-    this.y = y;
-  }
+	/**
+	 * Creates a new PassingValues object.
+	 *
+	 * @param x
+	 *            aI DOCUMENT ME!
+	 * @param y
+	 *            DOCUMENT ME!
+	 */
+	public PassByReference(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
 
-  //~ Methods --------------------------------------------------------------------------------------
+	// ~ Methods
+	// --------------------------------------------------------------------------------------
 
-  /**
-   * DOCUMENT ME!
-   *
-   * @param args DOCUMENT ME!
-   */
-  public static void main(String[] args)
-  {
-    PassByReference pv = new PassByReference(10, 20);
+	/**
+	 * DOCUMENT ME!
+	 *
+	 * @param args
+	 *            DOCUMENT ME!
+	 */
+	public static void main(String[] args) {
+		PassByReference pv = new PassByReference(10, 20);
+		System.out.println(pv.hashCode());
+		someMethod(pv);
+		System.out.println("print x value" + pv.x + +pv.y);
 
-    someMethod(pv);
-    System.out.println("print x value" + pv.x + +pv.y);
-    
-    Map<String, String> map = new HashMap<>();
-    
-   map.put("1","Arpitha");
-   System.out.println(map);
-   map.remove("1");
-   System.out.println(map);
-    
-  }
+		Map<String, String> map = new HashMap<>();
 
+		map.put("1", "Arpitha");
+		System.out.println(map);
+		map.remove("1");
+		System.out.println(map);
 
-  /**
-   * DOCUMENT ME!
-   *
-   * @param aPv DOCUMENT ME!
-   */
-  private static void someMethod(PassByReference aPv)
-  {
-    aPv.x = 30;
-  }
+	}
+
+	/**
+	 * DOCUMENT ME!
+	 *
+	 * @param aPv
+	 *            DOCUMENT ME!
+	 */
+	private static void someMethod(PassByReference aPv) {
+		System.out.println(aPv.hashCode());
+	}
 }
